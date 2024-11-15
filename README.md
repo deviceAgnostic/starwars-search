@@ -21,7 +21,7 @@ To run this application locally, follow these steps:
 
 npm install
 
-Running the Application
+## Running the Application
 To start the application, run:
 
 npm start
