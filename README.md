@@ -8,9 +8,7 @@ This is a React application that allows users to search for Star Wars characters
 - [Running the Application](#running-the-application)
 - [Project Structure](#project-structure)
 - [Additional Notes](#additional-notes)
-- [Contributing](#contributing)
-- [License](#license)
-
+  
 ## Installation
 
 To run this application locally, follow these steps:
