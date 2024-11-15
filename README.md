@@ -6,7 +6,6 @@ This is a React application that allows users to search for Star Wars characters
 
 - [Installation](#installation)
 - [Running the Application](#running-the-application)
-- [Project Structure](#project-structure)
 - [Additional Notes](#additional-notes)
   
 ## Installation
@@ -29,36 +28,7 @@ npm start
 
 This will start the development server and open the application in your default web browser. The application will be available at http://localhost:3000.
 
-Project Structure
-The project structure is organized as follows:
-
-src/
-├── App/
-│   ├── App.tsx
-│   ├── [App.css](http://_vscodecontentref_/2)
-├── CategoryPage/
-│   ├── CategoryPage.tsx
-│   ├── CategoryPage.css
-├── assets/
-│   ├── caret-left.svg
-│   ├── close.svg
-│   ├── pen.svg
-│   ├── trash.svg
-├── index.tsx
-├── index.css
-├── global.css
-├── types.ts
-├── reportWebVitals.ts
-
-App/: Contains the main application component and its styles.
-CategoryPage/: Contains the category page component and its styles.
-assets/: Contains SVG assets used in the application.
-index.tsx: Entry point of the application.
-index.css: Global styles for the application.
-global.css: Additional global styles.
-types.ts: TypeScript interfaces for the data models.
-reportWebVitals.ts: Performance measurement for the application.
-Additional Notes
+## Additional Notes
 API: The application uses the SWAPI (Star Wars API) to fetch data. No authentication is required to use this API.
 Autocomplete: The autocomplete suggestions are fetched from multiple categories (people, films, planets, species, starships, vehicles) and limited to 5 results.
 Editing and Deleting: Users can edit and delete characters directly from the table. The changes are reflected in the local state but not persisted to a backend.
