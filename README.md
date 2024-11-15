@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Star Wars Search Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application that allows users to search for Star Wars characters, films, planets, species, starships, and vehicles using the SWAPI (Star Wars API). The application features autocomplete suggestions and the ability to add, edit, and delete characters.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Project Structure](#project-structure)
+- [Additional Notes](#additional-notes)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To run this application locally, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/starwars-search.git
+   cd starwars-search
 
-### `npm test`
+2. Install dependencies: Make sure you have Node.js installed. Then, run:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+npm install
 
-### `npm run build`
+Running the Application
+To start the application, run:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This will start the development server and open the application in your default web browser. The application will be available at http://localhost:3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Project Structure
+The project structure is organized as follows:
 
-### `npm run eject`
+src/
+├── App/
+│   ├── App.tsx
+│   ├── [App.css](http://_vscodecontentref_/2)
+├── CategoryPage/
+│   ├── CategoryPage.tsx
+│   ├── CategoryPage.css
+├── assets/
+│   ├── caret-left.svg
+│   ├── close.svg
+│   ├── pen.svg
+│   ├── trash.svg
+├── index.tsx
+├── index.css
+├── global.css
+├── types.ts
+├── reportWebVitals.ts
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+App/: Contains the main application component and its styles.
+CategoryPage/: Contains the category page component and its styles.
+assets/: Contains SVG assets used in the application.
+index.tsx: Entry point of the application.
+index.css: Global styles for the application.
+global.css: Additional global styles.
+types.ts: TypeScript interfaces for the data models.
+reportWebVitals.ts: Performance measurement for the application.
+Additional Notes
+API: The application uses the SWAPI (Star Wars API) to fetch data. No authentication is required to use this API.
+Autocomplete: The autocomplete suggestions are fetched from multiple categories (people, films, planets, species, starships, vehicles) and limited to 5 results.
+Editing and Deleting: Users can edit and delete characters directly from the table. The changes are reflected in the local state but not persisted to a backend.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

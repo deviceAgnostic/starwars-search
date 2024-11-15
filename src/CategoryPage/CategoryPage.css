@@ -1,0 +1,90 @@
+.resultsContainer {
+    background-color: var(--SWBlack); 
+    border-radius: 8px;
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+    position: relative; 
+  }
+  
+  .topBar {
+    display: flex;
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background-color: var(--SWBlack); 
+    padding: 10px 20px; 
+    z-index: 1; 
+  }
+  
+  .topBar h1 {
+    margin: 0;
+    margin-left: 10px; 
+    color: var(--SWYellow); 
+    text-transform: uppercase;
+  }
+  
+  button.back {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../caret-left.svg'); 
+    border: none; 
+    cursor: pointer; 
+  }
+  
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 80px; 
+    table-layout: fixed;
+    transform: perspective(1000px) rotateX(20deg) scaleY(0.9); 
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    background-color: var(--SWBlack); 
+    color: var(--SWYellow); 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+  }
+  
+  td input {
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100px;
+    border: none; 
+    margin-top: 10px;
+  }
+  
+  .newCharacter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .newCharacter button {
+    border-radius: 0 4px 4px 0;
+    margin-top: 10px; 
+  }
+  
+  .newCharacter input {
+    border-radius: 4px 0 0 4px;
+    margin: 0;
+    border: none; 
+    margin-top: 10px; 
+  }
+  
+  .resultsContainer .newCharacter button.hollow {
+    border: none; 
+  }

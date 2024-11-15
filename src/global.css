@@ -1,0 +1,79 @@
+/* global.css */
+:root {
+    --SWYellow: #FFE81F;
+    --SWBlack: #000;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--SWBlack); 
+    color: var(--SWYellow); 
+    background-image: radial-gradient(white 0.5px, transparent 0.5px);
+    background-size: 20px 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--SWYellow); 
+    opacity: 0.7;
+    color: var(--SWBlack);
+    cursor: pointer;
+    transform-origin: bottom;
+    transition: opacity 250ms ease-in-out; 
+  }
+  
+  button:hover {
+    opacity: 1;
+  }
+  
+  button.hollow {
+    color: var(--SWYellow);
+    background-color: var(--SWBlack);
+    max-width: 100px;
+    border: 1px solid var(--SWYellow);
+    align-self: center;
+    opacity: 0.8;
+    transition: all 250ms ease-in-out; 
+  }
+  
+  button.hollow:hover {
+    color: var(--SWBlack);
+    background-color: var(--SWYellow);
+    opacity: 1;
+  }
+  
+  button.action {
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.6;
+  }
+  
+  button.action:hover {
+    opacity: 1;
+  }
+  
+  button.delete {
+    background-image: url(trash.svg);
+  }
+  
+  button.edit {
+    background-image: url(pen.svg);
+  }
+  
+  button.close {
+    background-image: url(close.svg);
+    width: 15px;
+    height: 15px;
+  }

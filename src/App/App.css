@@ -1,0 +1,102 @@
+/* App.css */
+.container {
+    background-color: var(--SWBlack); 
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    transform: perspective(1000px) rotateX(20deg) scaleY(0.9); 
+  }
+  
+  .title {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title h1 {
+    margin-top: 0;
+    transform-origin: bottom;
+  }
+  
+  .logo {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6c/Star_Wars_Logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    transform-origin: bottom;
+  }
+  
+  h1 {
+    color: var(--SWYellow); 
+    transform-origin: bottom;
+    text-transform: uppercase;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--SWYellow); 
+    border-radius: 4px;
+    background-color: #333; 
+    color: var(--SWYellow); 
+    transform-origin: bottom;
+  }
+
+  td input[type="text"] {
+
+   width: 100%;
+  }
+  
+  #autocomplete-results {
+    border: 1px solid var(--SWYellow); 
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #333; 
+    position: absolute;
+    width: calc(100% - 22px);
+    z-index: 1000;
+  }
+  
+  #autocomplete-results div {
+    padding: 10px;
+    cursor: pointer;
+    color: var(--SWYellow); 
+  }
+  
+  #autocomplete-results div:hover {
+    background-color: #444; 
+  }
+  
+  #search-results {
+    margin-top: 20px;
+    transform: perspective(1000px) rotateX(20deg) scaleY(0.9); 
+    transform-origin: bottom;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 70px 0;
+  }
+  
+  #search-results h3 {
+    color: var(--SWYellow); 
+    text-transform: uppercase;
+  }
+  
+  #search-results div {
+    display: flex;
+    margin-bottom: 10px;
+    transform-origin: bottom;
+    min-width: 33%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #search-results button {
+    margin-top: 10px;
+    transform-origin: bottom;
+  } 
